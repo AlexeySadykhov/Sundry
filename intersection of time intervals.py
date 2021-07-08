@@ -2,10 +2,13 @@ from pandas import Series
 from itertools import product
 
 test = {'main': [1594663200, 1594666800],
-             'a': [1594663340, 1594663389, 1594663390, 1594663395, 1594663396, 1594666472],
-             'b': [1594663290, 1594663430, 1594663443, 1594666473]}
+        'a': [1594663340, 1594663389, 1594663390, 
+              1594663395, 1594663396, 1594666472],
+        'b': [1594663290, 1594663430, 1594663443, 1594666473]}
+
 
 def presence(intervals):
+  
     def group(lst, n):
         return [lst[i:i + n] for i in range(0, len(lst), n)]
 
@@ -36,4 +39,5 @@ def presence(intervals):
 
     return i
 
-print('The amount of the presence of "a" and "b" within the "main":', presence(test), 'seconds')
+print('The amount of the presence of 
+      "a" and "b" within the "main":', presence(test), 'seconds')
