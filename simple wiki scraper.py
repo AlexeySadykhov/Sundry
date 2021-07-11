@@ -2,8 +2,8 @@ from bs4 import BeautifulSoup
 import requests
 
 
-def get_names(URL):
-    page_response = requests.get(URL, timeout=5)
+def get_names(url):
+    page_response = requests.get(url, timeout=5)
     page_content = BeautifulSoup(page_response.content, "html.parser")
     array = []
     for i in page_content.find_all('div', {'class': 'div-col'}):
