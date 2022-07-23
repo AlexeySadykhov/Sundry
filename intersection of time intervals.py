@@ -1,3 +1,10 @@
+################################################################################################################
+# Suppose we have 2 users: “a” and “b” and we want to know how much time they spent together in one session.   #
+# In our dict we have “main” value, which determines start and end points of the session in milliseconds.      #
+# For users we also have lists, where even indices designate session logins and odd indices designate logouts. #
+# This function returns the amount of the presence of both users during whole session.                         #
+################################################################################################################
+
 from pandas import Series
 from itertools import product
 
