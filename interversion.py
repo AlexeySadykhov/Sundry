@@ -1,3 +1,12 @@
+#############################################################################################################################
+# This function reproduces a specific permutation of any sequence, which called interversion.                               #
+# Actually, it is really rare kind of permutations but here it is. The main idea of interversion                            #
+# is to split sequence by two parts and to start choosing elements from the center alternating                              #
+# left and right elements. If the given sequence has even number of elements then it will be equally divided.               #
+# In another case script will find a central element, it will be written to the output array and process will be continued. #
+# Such function can be used in combinatorics, maths, science or even art.                                                   #
+#############################################################################################################################
+
 def interverse(l, nth):
     if nth > len(l)-1:
         print("Error. Nth argument must be less to number of list's elements")
