@@ -1,3 +1,11 @@
+###############################################################################################
+# Easy to use script for children which gives them an opportunity                             #
+# to train their basic arithmetic skills. User simply identifies a number of questions        #
+# in the test and gives the number he wants to learn.                                         #
+# The last field may be empty (in this case all numbers from 1 to 9 will be chosen randomly). #
+# In real time script randomly chooses numbers to multiply and reacts on users answers.       #
+###############################################################################################
+
 import random
 import sys
 
