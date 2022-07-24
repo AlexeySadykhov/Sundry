@@ -1,3 +1,11 @@
+#####################################################################################################
+# The goal of this script is quite simple but really useful.                                        #
+# It just creates a virtual axis and puts random points there.                                      #
+# If you split a list of these values into several nested lists you can get a random binary matrix. #
+# This script has been designed for using in stochastic music composition                           #
+# to determine a time points of different events.                                                   #
+#####################################################################################################
+
 import random
 
 main_dur = int(input('Enter main duration value:'))
