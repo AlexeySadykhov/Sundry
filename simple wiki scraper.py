@@ -1,5 +1,5 @@
 #######################################################
-# This is a prototype of a web scrapper.              #
+# This is a prototype of a web scraper.               #
 # At this moment it can just open a certain web page, #
 # collect items and show their quantity.              #
 #######################################################
