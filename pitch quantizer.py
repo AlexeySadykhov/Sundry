@@ -1,3 +1,12 @@
+#####################################################################################################################################
+# This example reproduces a basic quantization algorithm, which is usually used in audio processing software                        #
+# such as Cubase, Ableton, Pro Tools, etc. When user records his part, for example, some of notes may be a little bit out of tune.  # 
+# To simulate this process, “gen” function has been used. It just generates some random values for the main “quantize” function.    #
+# The main difference from the standard function of this type is that this one has an option of quantization step.                  #
+# It means that user can round off his values not only in 12-tone system. The value of “step” argument is determined by midi cents. #
+# That’s why you can round your score parts to quarter tones or even to smaller values.                                             #
+#####################################################################################################################################
+
 from random import randint
 
 
