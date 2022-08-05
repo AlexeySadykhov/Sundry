@@ -1,3 +1,9 @@
+##########################################################################
+# This amazing function can save your data.                              #
+# If you need a strong password simply give it a length                  #
+# of password you want to have and result will be generated immediately. #
+##########################################################################
+
 import random
 
 
