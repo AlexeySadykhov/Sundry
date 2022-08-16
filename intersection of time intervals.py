@@ -47,5 +47,5 @@ def presence(intervals):
     return i
 
 
-print('The amount of the presence of 
-      "a" and "b" within the "main":', presence(test), 'seconds')
+print("The amount of the presence of 
+      'a' and 'b' within the 'main': {} seconds".format(presence(test)))
