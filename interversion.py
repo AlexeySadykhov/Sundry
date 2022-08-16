@@ -10,7 +10,6 @@
 def interverse(l, nth):
     if nth > len(l)-1:
         print("Error. Nth argument must be less to number of list's elements")
-        input()
         exit(1)
 
     def group(lst, n):
