@@ -35,7 +35,7 @@ f = 0
 i = 0
 while i < count_of_questions:
     result = calculate(num)
-    question = str(result[0]) + 'x' + str(result[1]) + '?'
+    question = f"{str(result[0])}x{str(result[1])}?"
     print(question)
     try:
         answer = int(input('Answer:'))
@@ -47,7 +47,7 @@ while i < count_of_questions:
         t += 1
     else:
         print('No')
-        print(question.replace('?', '=') + str(result[2]))
+        print("".join([question.replace('?', '='), str(result[2])]))
         f += 1
     i += 1
 
