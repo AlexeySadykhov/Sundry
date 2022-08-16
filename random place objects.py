@@ -9,11 +9,7 @@
 import random
 
 main_dur = int(input('Enter main duration value:'))
-measure_s = input('Enter measure splitting values by space:').split()
-measure_l = []
-for i, item in enumerate(measure_s):
-    measure_s[i] = int(item)
-    measure_l.append(measure_s[i])
+measure_l = list(map(int, input('Enter measure splitting values by space:').split()))
 num_of_bars = int(input('Enter number of bars to generate:'))
 num_of_objects = int(input('Enter number of objects to place:'))
 
