@@ -23,6 +23,6 @@ ans = input('Would you like to save a text file? (y/n)')
 if ans == 'y':
     file = open('random_walk.txt', 'w')
     for x in walk:
-        file.write(str(x)+'\n')
+        file.write(f"{str(x)}\n")
     file.close()
 print('Done')
