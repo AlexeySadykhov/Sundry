@@ -16,9 +16,9 @@ def temperate(start, length):
 
 
 def save(filename, data):
-    file = open(filename + '.txt', 'w')
+    file = open(f"{filename}.txt", "w")
     for item in data:
-        file.write(str(item) + '\n')
+        file.write(f"{str(item)}\n")
     file.close()
 
 
