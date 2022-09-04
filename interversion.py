@@ -7,10 +7,13 @@
 # Such function can be used in combinatorics, maths, science or even art.                                                   #
 #############################################################################################################################
 
+import sys
+
+
 def interverse(l, nth):
     if nth > len(l)-1:
         print("Error. Nth argument must be less to number of list's elements")
-        exit(1)
+        sys.exit(1)
 
     def group(lst, n):
         return [lst[i:i + n] for i in range(0, len(lst), n)]
