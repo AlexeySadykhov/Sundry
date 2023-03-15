@@ -1,33 +1,24 @@
 ##########################################################################
-# This amazing function can save your data.                              #
+# This amazing script can save your data.                                #
 # If you need a strong password simply give it a length                  #
-# of password you want to have and result will be generated immediately. #
+# of the password you want to have and the result                        #
+# will be generated immediately.                                         #
 ##########################################################################
 
-import random
+import secrets
+import string as s
 
-
-def generate_password(length):
-    letters = ['a', 'b', 'c', 'd', 'e',
-               'f', 'g', 'h', 'i', 'j',
-               'k', 'l', 'm', 'n', 'o',
-               'p', 'q', 'r', 's', 't',
-               'u', 'v', 'w', 'x', 'y', 'z']
-    array = []
-    for i in range(length):
-        ch = random.randint(0, 1)
-        if ch == 1:
-            x = random.choice(letters)
-            l_ch = random.randint(0, 1)
-            if l_ch == 1:
-                array.append(x.upper())
-            else:
-                array.append(x)
+input_correct = False
+pass_length = None
+while not input_correct:
+    try:
+        pass_length = int(input("Enter the length of the password:"))
+        if pass_length <= 10:
+            print("Error. Password length must be greater then 10.\nTry again.")
         else:
-            array.append(random.randint(0, 9))
+            input_correct = True
+    except ValueError:
+        print("Error. Not a number.\nTry again.")
 
-    result = ''.join(str(x) for x in array)
-    return result
-
-
-print(generate_password(50))
+chars = ''.join([s.digits, s.ascii_letters, s.punctuation])
+print(''.join([secrets.choice(chars) for _ in range(pass_length)]))
